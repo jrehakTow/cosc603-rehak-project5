@@ -30,7 +30,7 @@ public class CoffeeMaker {
 	/**
 	 * Returns true if recipe doesn't exist
 	 * @param r
-	 * @return canAddRecipe
+	 * @return
 	 */
 	public boolean checkRecipe(Recipe r) {
 		boolean canAddRecipe = true;
