@@ -1,0 +1,195 @@
+package edu.towson.cis.cosc603.project5.coffeemaker;
+
+import junit.framework.TestCase;
+
+/**
+ * The class <code>RecipeTest</code> contains tests for the class {@link
+ * <code>Recipe</code>}
+ *
+ * @pattern JUnit Test Case
+ *
+ * @generatedBy CodePro at 4/27/16 9:47 PM
+ *
+ * @author rehakjc
+ *
+ * @version $Revision$
+ */
+public class RecipeTest extends TestCase
+{
+
+	/**
+	 * Construct new test instance
+	 *
+	 * @param name the test name
+	 */
+	public RecipeTest(String name)
+	{
+		super(name);
+	}
+
+	/**
+	 * Perform pre-test initialization
+	 *
+	 * @throws Exception
+	 *
+	 * @see TestCase#setUp()
+	 */
+	protected void setUp()
+		throws Exception
+	{
+		super.setUp();
+		// Add additional set up code here
+	}
+
+	/**
+	 * Perform post-test clean up
+	 *
+	 * @throws Exception
+	 *
+	 * @see TestCase#tearDown()
+	 */
+	protected void tearDown()
+		throws Exception
+	{
+		super.tearDown();
+		// Add additional tear down code here
+	}
+
+	/**
+	 * Run the boolean equals(Recipe) method test
+	 */
+	public void testEquals()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		Recipe r = null;
+		boolean result = fixture.equals(r);
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the int getAmtChocolate() method test
+	 */
+	public void testGetAmtChocolate()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		int result = fixture.getAmtChocolate();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the int getAmtCoffee() method test
+	 */
+	public void testGetAmtCoffee()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		int result = fixture.getAmtCoffee();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the int getAmtMilk() method test
+	 */
+	public void testGetAmtMilk()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		int result = fixture.getAmtMilk();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the int getAmtSugar() method test
+	 */
+	public void testGetAmtSugar()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		int result = fixture.getAmtSugar();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the String getName() method test
+	 */
+	public void testGetName()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		String result = fixture.getName();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the int getPrice() method test
+	 */
+	public void testGetPrice()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		int result = fixture.getPrice();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the void setAmtChocolate(int) method test
+	 */
+	public void testSetAmtChocolate()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		int amtChocolate = 0;
+		fixture.setAmtChocolate(amtChocolate);
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the void setAmtCoffee(int) method test
+	 */
+	public void testSetAmtCoffee()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		int amtCoffee = 0;
+		fixture.setAmtCoffee(amtCoffee);
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the void setAmtMilk(int) method test
+	 */
+	public void testSetAmtMilk()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		int amtMilk = 0;
+		fixture.setAmtMilk(amtMilk);
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the void setAmtSugar(int) method test
+	 */
+	public void testSetAmtSugar()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Recipe fixture = new Recipe();
+		int amtSugar = 0;
+		fixture.setAmtSugar(amtSugar);
+		assertTrue(false);
+	}
+}
+

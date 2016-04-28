@@ -1,0 +1,132 @@
+package edu.towson.cis.cosc603.project5.coffeemaker;
+
+import junit.framework.TestCase;
+
+/**
+ * The class <code>InventoryTest</code> contains tests for the class {@link
+ * <code>Inventory</code>}
+ *
+ * @pattern JUnit Test Case
+ *
+ * @generatedBy CodePro at 4/27/16 8:57 PM
+ *
+ * @author rehakjc
+ *
+ * @version $Revision$
+ */
+public class InventoryTest extends TestCase
+{
+
+	/**
+	 * Construct new test instance
+	 *
+	 * @param name the test name
+	 */
+	public InventoryTest(String name)
+	{
+		super(name);
+	}
+
+	/**
+	 * Perform pre-test initialization
+	 *
+	 * @throws Exception
+	 *
+	 * @see TestCase#setUp()
+	 */
+	protected void setUp()
+		throws Exception
+	{
+		super.setUp();
+		// Add additional set up code here
+	}
+
+	/**
+	 * Perform post-test clean up
+	 *
+	 * @throws Exception
+	 *
+	 * @see TestCase#tearDown()
+	 */
+	protected void tearDown()
+		throws Exception
+	{
+		super.tearDown();
+		// Add additional tear down code here
+	}
+
+	/**
+	 * Run the boolean enoughIngredients(Recipe) method test
+	 */
+	public void testEnoughIngredients()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Inventory fixture = new Inventory();
+		Recipe r = null;
+		boolean result = fixture.enoughIngredients(r);
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the int getChocolate() method test
+	 */
+	public void testGetChocolate()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Inventory fixture = new Inventory();
+		int result = fixture.getChocolate();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the int getCoffee() method test
+	 */
+	public void testGetCoffee()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Inventory fixture = new Inventory();
+		int result = fixture.getCoffee();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the int getMilk() method test
+	 */
+	public void testGetMilk()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Inventory fixture = new Inventory();
+		int result = fixture.getMilk();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the int getSugar() method test
+	 */
+	public void testGetSugar()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Inventory fixture = new Inventory();
+		int result = fixture.getSugar();
+		assertTrue(false);
+	}
+
+	/**
+	 * Run the void setChocolate(int) method test
+	 */
+	public void testSetChocolate()
+	{
+		fail("Newly generated method - fix or disable");
+		// add test code here
+		Inventory fixture = new Inventory();
+		int chocolate = 0;
+		fixture.setChocolate(chocolate);
+		assertTrue(false);
+	}
+}
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SessionExportWizard">
+		<item value="HTML" key="SessionExportPage1.format"/>
+		<list key="SessionExportPage1.destinations">
+			<item value="/Volumes/Machintosh 2A/Users/rehakjc/Documents/cosc603 testing and maintenance/cosc603-rehak-project5/CoffeeMaker/reqs"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,20 @@
+package edu.towson.cis.cosc603.project5.coffeemaker;
+
+import junit.framework.TestCase;
+
+/**
+ * The class <code>InventoryTest</code> contains tests for the class {@link
+ * <code>Inventory</code>}
+ *
+ * @pattern JUnit Test Case
+ *
+ * @generatedBy CodePro at 4/27/16 8:57 PM
+ *
+ * @author rehakjc
+ *
+ * @version $Revision$
+ */
+public class InventoryTest extends TestCase
+{
+}
+

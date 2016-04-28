@@ -1,0 +1,164 @@
+package edu.towson.cis.cosc603.project5.coffeemaker;
+
+import junit.framework.TestCase;
+
+/**
+ * The class <code>RecipeTest</code> contains tests for the class {@link
+ * <code>Recipe</code>}
+ *
+ * @pattern JUnit Test Case
+ *
+ * @generatedBy CodePro at 4/27/16 9:47 PM
+ *
+ * @author rehakjc
+ *
+ * @version $Revision$
+ */
+public class RecipeTest extends TestCase {
+	private CoffeeMaker cm;
+	private Inventory i;
+	private Recipe r1;
+	
+	int amtCoffee;
+	int amtMilk;
+	int amtSugar;
+	int amtChocolate;
+
+	/**
+	 * Perform pre-test initialization
+	 *
+	 * @throws Exception
+	 *
+	 * @see TestCase#setUp()
+	 */
+	protected void setUp(){
+		cm = new CoffeeMaker();
+		i = cm.checkInventory();
+
+		r1 = new Recipe();
+		r1.setName("Coffee");
+		r1.setPrice(50);
+		r1.setAmtCoffee(3);
+		r1.setAmtMilk(1);
+		r1.setAmtSugar(1);
+		r1.setAmtChocolate(0);
+		
+		amtCoffee = 15;
+		amtMilk = 10;
+		amtSugar = 12;
+		amtChocolate = 20;
+	}
+
+	/**
+	 * Perform post-test clean up
+	 *
+	 * @throws Exception
+	 *
+	 * @see TestCase#tearDown()
+	 */
+	protected void tearDown() throws Exception {
+		cm = null;
+		i = null;
+		r1 = null;
+	}
+
+	/**
+	 * Run the boolean equals(Recipe) method test
+	 */
+	public void testEquals() {
+		assertTrue(r1.equals(r1));
+	}
+
+	/**
+	 * Run the int getAmtChocolate() method test
+	 */
+	public void testGetAmtChocolate() {
+		Recipe r2 = new Recipe();
+		assertFalse(r1.equals(r2));
+		
+	}
+
+	/**
+	 * Run the int getAmtCoffee() method test
+	 */
+	public void testGetAmtCoffee() {
+		
+	}
+
+	/**
+	 * Run the int getAmtMilk() method test
+	 */
+	public void testGetAmtMilk() {
+		
+	}
+
+	/**
+	 * Run the int getAmtSugar() method test
+	 */
+	public void testGetAmtSugar() {
+		
+	}
+
+	/**
+	 * Run the String getName() method test
+	 */
+	public void testGetName() {
+		
+	}
+
+	/**
+	 * Run the int getPrice() method test
+	 */
+	public void testGetPrice() {
+		
+	}
+
+	/**
+	 * Run the void setAmtChocolate(int) method test
+	 */
+	public void testSetAmtChocolate() {
+		
+	}
+
+	/**
+	 * Run the void setAmtCoffee(int) method test
+	 */
+	public void testSetAmtCoffee() {
+		
+	}
+
+	/**
+	 * Run the void setAmtMilk(int) method test
+	 */
+	public void testSetAmtMilk() {
+		
+	}
+
+	/**
+	 * Run the void setAmtSugar(int) method test
+	 */
+	public void testSetAmtSugar() {
+		
+	}
+
+	/**
+	 * Run the void setName(String) method test
+	 */
+	public void testSetName() {
+		
+	}
+
+	/**
+	 * Run the void setPrice(int) method test
+	 */
+	public void testSetPrice() {
+		
+	}
+
+	/**
+	 * Run the String toString() method test
+	 */
+	public void testToString() {
+		
+	}
+}

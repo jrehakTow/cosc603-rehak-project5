@@ -1,0 +1,30 @@
+package edu.towson.cis.cosc603.project5.coffeemaker;
+
+import junit.framework.TestCase;
+
+/**
+ * The class <code>RecipeTest</code> contains tests for the class {@link
+ * <code>Recipe</code>}
+ *
+ * @pattern JUnit Test Case
+ *
+ * @generatedBy CodePro at 4/27/16 9:47 PM
+ *
+ * @author rehakjc
+ *
+ * @version $Revision$
+ */
+public class RecipeTest extends TestCase
+{
+
+	/**
+	 * Construct new test instance
+	 *
+	 * @param name the test name
+	 */
+	public RecipeTest(String name)
+	{
+		super(name);
+	}
+}
+

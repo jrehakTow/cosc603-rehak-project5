@@ -1,0 +1,251 @@
+package edu.towson.cis.cosc603.project5.coffeemaker;
+
+import junit.framework.TestCase;
+
+// TODO: Auto-generated Javadoc
+/**
+ * The class <code>InventoryTest</code> contains tests for the class {@link
+ * <code>Inventory</code>}.
+ *
+ * @author James Rehak
+ * @pattern JUnit Test Case
+ */
+public class InventoryTest extends TestCase {
+	
+	/** The cm. */
+	private CoffeeMaker cm;
+	
+	/** The i. */
+	private Inventory i;
+	
+	/** The r1. */
+	private Recipe r1;
+	
+	/** The amt coffee. */
+	int amtCoffee;
+	
+	/** The amt milk. */
+	int amtMilk;
+	
+	/** The amt sugar. */
+	int amtSugar;
+	
+	/** The amt chocolate. */
+	int amtChocolate;
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @see TestCase#setUp()
+	 */
+	protected void setUp(){
+		cm = new CoffeeMaker();
+		i = cm.checkInventory();
+
+		r1 = new Recipe();
+		r1.setName("Coffee");
+		r1.setPrice(50);
+		r1.setAmtCoffee(3);
+		r1.setAmtMilk(1);
+		r1.setAmtSugar(1);
+		r1.setAmtChocolate(0);
+		
+		amtCoffee = 15;
+		amtMilk = 10;
+		amtSugar = 12;
+		amtChocolate = 20;
+	}
+
+	/**
+	 * Perform post-test clean up.
+	 *
+	 * @throws Exception the exception
+	 * @see TestCase#tearDown()
+	 */
+	protected void tearDown() throws Exception {
+		cm = null;
+		i = null;
+		r1 = null;
+	}
+
+	/**
+	 * Test not enough ingredients
+	 */
+	public void testEnoughIngredients() {
+		i.setCoffee(0);
+		i.setMilk(0);
+		i.setSugar(0);
+		i.setChocolate(0);
+		
+		r1.setAmtChocolate(2);
+		//cm.addRecipe(r1);
+		assertFalse(i.enoughIngredients(r1));
+		
+	}
+	
+	/**
+	 * Test enough ingredients1.
+	 */
+	public void testEnoughIngredients1(){
+		assertTrue(i.enoughIngredients(r1));
+	}
+	
+	/**
+	 * Test recipe that uses maximum ingredients
+	 */
+	public void testEnoughIngredients2(){
+		Recipe r2 = new Recipe();
+		r2.setName("Max Recipe");
+		r2.setPrice(15);
+		r2.setAmtCoffee(15);
+		r2.setAmtMilk(15);
+		r2.setAmtSugar(15);
+		r2.setAmtChocolate(15);
+		
+		//cm.addRecipe(r2);
+		assertTrue(i.enoughIngredients(r2));
+	}
+
+	/**
+	 * Run the int getChocolate() method test.
+	 */
+	public void testGetChocolate() {
+		assertEquals(15,  i.getChocolate());
+	}
+
+	/**
+	 * Run the int getCoffee() method test.
+	 */
+	public void testGetCoffee() {
+		assertEquals(15, i.getCoffee());
+	}
+
+	/**
+	 * Run the int getMilk() method test.
+	 */
+	public void testGetMilk() {
+		assertEquals(15, i.getMilk());
+	}
+
+	/**
+	 * Run the int getSugar() method test.
+	 */
+	public void testGetSugar() {
+		assertEquals(15,  i.getSugar());
+	}
+
+	/**
+	 * Run the void setChocolate(int) method test.
+	 * Test zero amount set.
+	 */
+	public void testSetChocolate() {
+		i.setChocolate(0);
+		assertEquals(0, i.getChocolate());
+	}
+	
+	/**
+	 * Test set chocolate1.
+	 */
+	public void testSetChocolate1() {
+		i.setChocolate(1);
+		assertEquals(1, i.getChocolate());
+	}
+
+	/**
+	 * Test set chocolate2. Set negative amount.
+	 * Expect set to 0.
+	 */
+	public void testSetChocolate2() {
+		i.setChocolate(-1);
+		assertEquals(0, i.getChocolate());
+	}
+
+	/**
+	 * Run the void setCoffee(int) method test.
+	 * Test zero amount set.
+	 */
+	public void testSetCoffee() {
+		i.setCoffee(0);
+		assertEquals(0, i.getCoffee());
+		
+	}
+	
+	/**
+	 * Test set coffee1.
+	 */
+	public void testSetCoffee1(){ //test greater than 0
+		i.setCoffee(1);
+		assertEquals(1, i.getCoffee());
+	}
+	
+	/**
+	 * Test set coffee2. Set negative amount.
+	 * Expect set to 0.
+	 */
+	public void testSetCoffee2(){
+		i.setCoffee(-1);
+		assertEquals(0, i.getCoffee());
+	}
+
+	/**
+	 * Run the void setMilk(int) method test.
+	 * Test zero amount set.
+	 */
+	public void testSetMilk(){
+		i.setMilk(0);
+		assertEquals(0, i.getMilk());
+	}
+	
+	/**
+	 * Test set milk1.
+	 */
+	public void testSetMilk1(){
+		i.setMilk(1);
+		assertEquals(1, i.getMilk());
+	}
+	
+	/**
+	 * Test set milk2. Set negative amount.
+	 * Expect set to 0.
+	 */
+	public void testSetMilk2() {
+		i.setMilk(-1);
+		assertEquals(0, i.getMilk());
+	}
+
+	/**
+	 * Run the void setSugar(int) method test.
+	 * Test zero amount set.
+	 */
+	public void testSetSugar() {
+		i.setSugar(0);
+		assertEquals(0, i.getSugar());
+	}
+	
+	/**
+	 * Test set sugar1.
+	 */
+	public void testSetSugar1() {
+		i.setSugar(1);
+		assertEquals(1, i.getSugar());
+	}
+	
+	/**
+	 * Test set sugar2. Set negative amount.
+	 * Expect set to 0.
+	 */
+	public void testSetSugar2() {
+		i.setSugar(-1);
+		assertEquals(0, i.getSugar());
+	}
+
+	
+	/**
+	 * Test to string1. Test different inventories. 
+	 */
+	public void testToString1() {
+		String inventory = i.toString();
+		cm.addInventory(amtCoffee, amtMilk, amtSugar, amtChocolate);
+		assertNotSame(inventory, i.toString());
+	}
+}
